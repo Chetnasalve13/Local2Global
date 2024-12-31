@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-xl lg:max-w-4xl">
+          <div class="md:flex">
+            <div class="md:flex-shrink-0 bg-gradient-to-r from-orange-500 to-red-500 user-profile p-6">
+              <div class="text-center text-white">
+                <div class="m-b-25">
+                  <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="rounded-lg" alt="User-Profile-Image">
+                </div>
+                <h6 class="font-semibold">Vendor Profile</h6>
+                <p class="text-sm">My User Id </p>
+                <p class="text-sm" id="userid"></p>
+                <i class="feather icon-edit mt-4 text-gray-100 text-sm"></i>
+              </div>
+            </div>
+            <div class="p-12 w-full">
+              <h6 class="mb-7 pb-2 border-b border-gray-300 font-semibold">About Me</h6>
+              <div class="flex flex-wrap mb-5">
+                <div class="w-full md:w-1/2">
+                  <p class="font-semibold mb-1">Email</p>
+                  <p class="text-sm text-gray-700" id="email"></p>
+                </div>
+               
+                <div class="w-full md:w-1/2">
+                    <p class="font-semibold mb-1">Address</p>
+                    <p class="text-sm text-gray-700" id="address"></p>
+                  </div>
+                <div class="w-full md:w-1/2">
+                  <p class="font-semibold mb-1">Phone</p>
+                  <p class="text-sm text-gray-700" id="phoneno"></p>
+                </div>
+              </div>
+              
+              
+              <h6 class="mb-5 mt-8 pb-2 border-b border-gray-300 font-semibold">My Shop Section</h6>
+              <div class="flex flex-wrap mb-5">
+                
+                  <div class="w-full md:w-1/2">
+                    <p class="font-semibold mb-1">Shop Name</p>
+                    <p class="text-sm text-gray-700" id="shopname"></p>
+                  </div>
+                  
+              </div>
+              <div class="w-full md:w-1/2">
+                <p class="font-semibold mb-1">Order History</p>
+                <p class="text-sm text-gray-700" id="shopname"></p>
+              </div>
+             
+              <button id="dashboard" type="button" class="w-full flex items-center justify-center w-1/2 px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
+                <svg class="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                </svg>
+                <span>Dashboard</span>
+            </button>
+
+              <ul class="list-inline mt-8 mb-4">
+                <li class="inline-block mr-4">
+                  <a href="#" class="text-gray-900 hover:text-indigo-500">
+                    <i class="feather icon-facebook"></i>
+                  </a>
+                </li>
+                <li class="inline-block mr-4">
+                  <a href="#" class="text-gray-900 hover:text-indigo-500">
+                    <i class="feather icon-twitter"></i>
+                  </a>
+                </li>
+                <li class="inline-block">
+                  <a href="#" class="text-gray-900 hover:text-indigo-500">
+                    <i class="feather icon-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="module" src="./vendorprofile.js"></script>
+      <script type="module" src="./vendorprofile1.js"></script>
+</body>
+</html>

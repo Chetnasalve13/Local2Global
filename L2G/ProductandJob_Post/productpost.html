@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+        body, html {
+      height: 400%;
+      margin: 0;
+      
+      justify-content: center;
+      align-items: center;
+      background-color: #f7fafc; /* Set background color */
+    }
+      .gradient {
+        background: #223843 100%;
+      }
+      .formm{
+        padding-left: 400px;
+        align-items: center;
+        margin: 0 auto;
+      }
+    form{
+        width: 100%;
+      max-width: 600px; /* Set maximum width for the form */
+      padding: 20px;
+    }
+    .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the footer stays at the bottom of the viewport */
+}
+.sections{
+    background-color: #aec4be;
+}
+.containerProduct{
+    background-color: #DBD3D8;
+}
+    
+    </style>
+</head>
+<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+
+    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+          <div class="pl-4 flex items-center">
+            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+              <!--Icon from: http://www.potlabicons.com/ -->
+              <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+                <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
+                <path
+                  class="plane-take-off"
+                  d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "
+                />
+              </svg>
+              LOCAL2GLOBAL
+            </a>
+          </div>
+          <div class="block lg:hidden pr-4">
+            <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+            
+            <button
+              id="navAction"
+              class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            >
+            Local2Global Presents Unique Job Market for Selling Products
+            </button>
+          </div>
+        </div>
+        <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+      </nav>
+      <br><br><br>
+      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+        New Product Arrivals
+      </h2>
+      <section class="bg-white border-b py-8 sections">
+        <div class="container mx-auto flex flex-wrap pt-4 pb-12 " id="productpostcontainer">
+         <!--
+          <div class="w-full mb-4">
+            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>
+          <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink  ">
+            <div class="flex-1 bg-white  overflow-hidden shadow containerProduct rounded-2xl ">
+              <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                <p class="w-full text-gray-600 text-xs md:text-sm px-6" id="industryname">
+                  Hingna,Nagpur
+                </p>
+                <div class="w-full font-bold text-xl text-gray-800 px-6" style="font-weight: bold; font-size: 25px; padding-bottom: 10px;" id="productname">
+                  Traditional Pickle and Papad
+                </div>
+                <img style=" padding-left: 10px; padding-right: 10px;" class="rounded-3xl" src="https://www.shutterstock.com/image-photo/gujarati-papad-papadum-raw-dried-260nw-1465722764.jpg" alt="" id="productimage">
+                <p class="text-gray-800 text-base px-6 mb-5" style=" font-size: 22px;" id="productdesc">
+                  "Savor the authentic taste of tradition with our timeless pickles and pappads, crafted with age-old recipes to bring a burst of flavor to every bite!"
+  
+  
+                </p>
+              </a>
+              <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6 containerProduct">
+                <div class="flex items-center justify-start">
+                  <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Buy Now
+                  </button>
+                  <div></div>
+                  <div class="flex" style="padding-left: 70px;">
+                    <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        Call Now
+                      </button>
+                
+                </div>  
+                </div>
+                <div class="flex items-center justify-between inset-x-0 bottom-0 p-6">
+                    <p class="text-gray-600 text-xs md:text-sm" id="contacno">7 MIN READ</p>
+                  </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div class="flex-1 bg-white overflow-hidden shadow containerProduct rounded-2xl">
+              <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                  Hingna,Nagpur
+                </p>
+                <div class="w-full font-bold text-xl text-gray-800 px-6" style="font-weight: bold; font-size: 25px; padding-bottom: 10px;">
+                  Traditional Candle
+                </div>
+                <img style=" padding-left: 10px; padding-right: 10px; width: 500px; height: 250px;" class="rounded-3xl" src="data:image/jpeg;base64,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" alt="">
+                <p class="text-gray-800 text-base px-6 mb-5" style=" font-size: 22px;">
+                  "Savor the authentic taste of tradition with our timeless pickles and pappads, crafted with age-old recipes to bring a burst of flavor to every bite!"
+  
+  
+                </p>
+              </a>
+              <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6 containerProduct">
+                <div class="flex items-center justify-start">
+                    <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                      Buy Now
+                    </button>
+                    <div></div>
+                    <div class="flex" style="padding-left: 70px;">
+                      <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                          Call Now
+                        </button>
+                  
+                  </div> 
+                </div>
+                <div class="flex items-center justify-between inset-x-0 bottom-0 p-6">
+                    <p class="text-gray-600 text-xs md:text-sm">7 MIN READ</p>
+                  </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div class="flex-1 bg-white  overflow-hidden shadow containerProduct rounded-2xl">
+              <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                  Hingna,Nagpur
+                </p>
+                <div class="w-full font-bold text-xl text-gray-800  px-6" style="font-weight: bold; font-size: 25px; padding-bottom: 10px;">
+                  Traditional Pickle and Papad
+                </div>
+                <img style=" padding-left: 10px; padding-right: 10px;" class="rounded-3xl" src="https://t4.ftcdn.net/jpg/04/20/07/45/360_F_420074558_17jNAnuioIO5NyaHGV6jdlErjhyKjPCb.jpg" alt="">
+                <p class="text-gray-800 text-base px-6 mb-5" style=" font-size: 22px;">
+                  "Savor the authentic taste of tradition with our timeless pickles and pappads, crafted with age-old recipes to bring a burst of flavor to every bite!"
+  
+  
+                </p>
+              </a>
+              <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6 containerProduct">
+                <div class="flex items-center justify-start">
+                    <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                      Buy Now
+                    </button>
+                    <div></div>
+                    <div class="flex" style="padding-left: 70px;">
+                      <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                          Call Now
+                        </button>
+                  
+                  </div> 
+                </div>
+                <div class="flex items-center justify-between inset-x-0 bottom-0 p-6">
+                    <p class="text-gray-600 text-xs md:text-sm">7 MIN READ</p>
+                  </div>
+              </div>
+            </div>
+            -->
+          </div>
+          
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <hr>
+
+      <footer class="container mx-auto text-center  mb-12">
+          <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+            LOCAL2GLOBAL
+          </h2>
+          <div class="w-full mb-4">
+            <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>
+          <h3 class="my-4 text-3xl leading-tight">
+            Bridiging Gap between small scale Industries and Local Shopkeepers
+          </h3>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="widget widget-connect">
+              <div class="widget-title">
+                <h5> Connect with us!!!!!</h5>
+              </div>
+              <ul>
+                <li><span class="bgcolor"><i class="icon-ring_volume"></i></span>
+                  <p>*91 8956886685</p>
+                </li>
+                <li><span class="bgcolor"><i class="icon-envelope-o"></i></span>
+                  <p><a href="#">Local2Global@gmail.com</a>
+                  </p>
+                </li>
+                <li><span class="bgcolor"><i class="icon-location-pin2"></i></span>
+                  <p>33 - B, 2nd Floor, Saint Jhon Doe Appartments, Sussex, UK.26AL565C,Nagpur.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <script type="module" src="./productpost1.js"></script>
+  </body>
+  </html>
